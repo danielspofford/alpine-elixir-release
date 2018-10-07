@@ -12,11 +12,11 @@ ARG APP_VSN
 # The environment to build with
 ARG MIX_ENV=prod
 # Set this to true if this release is not a Phoenix app
-ARG SKIP_PHOENIX=false
+ARG SKIP_PHOENIX=true
 # If you are using an umbrella project, you can change this
 # argument to the directory the Phoenix app is in so that the assets
 # can be built
-ARG PHOENIX_SUBDIR=./apps/lime_web
+ARG PHOENIX_SUBDIR=
 
 ENV SKIP_PHOENIX=${SKIP_PHOENIX} \
     APP_NAME=${APP_NAME} \
