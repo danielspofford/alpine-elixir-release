@@ -70,6 +70,7 @@ ARG APP_NAME
 RUN apk update && \
     apk add --no-cache \
       bash \
+      curl \
       openssl-dev
 
 ENV REPLACE_OS_VARS=true \
